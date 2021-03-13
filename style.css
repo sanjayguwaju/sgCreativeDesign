@@ -1,0 +1,118 @@
+/* Common Styles */
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Monoton&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  font-family: "Bellota Text", cursive;
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  overflow-x: hidden;
+}
+/* End of Common Styles */
+
+/* Section 1 */
+.section-1 {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  position: relative;
+}
+
+.floating-bg {
+  width: 150vw;
+  height: 150vw;
+  background-color: rgba(50, 231, 255, 0.8);
+  position: absolute;
+  top: -125vw;
+  /*  !!!! - sign shoud have space This is a mathmatical calculation*/
+  left: calc(50% - 75vw);
+  border-radius: 45%;
+  animation: rotate 30s infinite;
+}
+
+.floating-bg::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(50, 231, 255, 0.1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 40%;
+  animation: rotate 30s infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar {
+  position: relative;
+  z-index: 20;
+  top: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar-link {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  width: 1.5rem;
+  word-wrap: break-word;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.navbar-link:hover {
+  width: 15rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 2.5s;
+}
+
+.section-1-heading {
+  font-size: 8rem;
+  font-family: "Monoton", cursive;
+  position: absolute;
+  top: 18vw;
+  left: 50%;
+  transform: translateX(-50%);
+  text-shadow: 0.3rem 0.3rem 0.3rem #888;
+  color: #000;
+  background-color: pink;
+  width: 85rem;
+  text-align: center;
+  padding: 0.8rem 1.6rem;
+  border-radius: 12rem;
+  opacity: 0.9;
+}
+
+.logo {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo i {
+  font-size: 15rem;
+  color: rgba(50, 231, 255, 0.8);
+  text-shadow: 0.1rem 0.1rem 0.2rem #ddd, -1rem -0.1rem -0.1rem 0.2rem #ddd;
+}
+/* End of Section 1 */
