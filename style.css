@@ -387,6 +387,12 @@ html {
   border-radius: 0.5rem;
   box-shadow: 3rem 3rem 4rem #aaa;
   transform: rotateY(-20deg);
+  transition: all 0.5s;
+}
+
+.contact-form:hover {
+  transform: translateY(-2rem) rotateY(-20deg);
+  box-shadow: 5rem 5rem 7rem #aaa;
 }
 
 .contact-form input,
