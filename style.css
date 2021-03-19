@@ -432,4 +432,23 @@ html {
   color: #444;
   margin-top: 5rem;
 }
+
+.scroll-up-btn {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(50, 231, 255, 0.8);
+  position: fixed;
+  bottom: 5rem;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s;
+}
+
+.scroll-up-btn:hover {
+  background-color: #32e7ff;
+}
 /* End of Section 4 */
