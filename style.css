@@ -15,7 +15,7 @@
 html {
   font-size: 62.5%;
 }
-.container{
+.container {
   width: 100%;
   overflow-x: hidden;
 }
@@ -341,7 +341,7 @@ html {
 /* End of Section 3 */
 
 /* Section 4 */
-.section-4{
+.section-4 {
   width: 100%;
   height: 130vh;
   display: flex;
@@ -350,12 +350,58 @@ html {
   align-items: center;
 }
 
-.form-container{
+.form-container {
   width: 80%;
   height: 40%;
   background-color: #e5e9ff;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  box-shadow: 0.3rem 0.3rem 0.4rem #ccc, -0.1rem -0.1rem 0.4rem #ccc;
+  border: 0.5rem;
+}
+
+.form-img {
+  width: 55rem;
+  background-color: rgba(50, 231, 255, 0.8);
+  padding: 5rem;
+  opacity: 0.8;
+  box-shadow: -3rem 3rem 4rem #aaa;
+}
+
+.contact-form {
+  width: 45rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 3rem 3rem 4rem #aaa;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: inset 0.1rem 0.1rem 0.2rem #ddd, inset -0.1rem -0.1rem 0.2rem #ddd;
+}
+
+.contact-form textarea {
+  max-height: 15rem;
+  min-height: 10rem;
+  max-width: 100%;
+  min-width: 70%;
+}
+
+.contact-form input[type="submit"] {
+  background-color: rgba(50, 231, 255, 0.8);
+  color: #fff;
+  font-weight: bolder;
+  letter-spacing: 0.5rem;
+  cursor: pointer;
 }
 /* End of Section 4 */
