@@ -614,6 +614,17 @@ html {
       .contact-form:hover {
         box-shadow: 2rem 2rem 3rem #aaa;
       }
+
+      .copyright {
+        font-size: 1.8rem;
+        margin: 5rem;
+        text-align: center;
+      }
+
+      .scroll-up-btn {
+        bottom: 2rem;
+        right: 2rem;
+      }
     }
   }
 }
