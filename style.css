@@ -527,6 +527,8 @@ html {
     margin: 5rem 0 4rem 0;
   }
 
+  /* Screen size of 1150px */
+
   @media (max-width: 1150px) {
     .floating-bg {
       top: -110vw;
@@ -540,6 +542,78 @@ html {
 
     .logo i {
       font-size: 9rem;
+    }
+  }
+
+  @media (max-width: 950px) {
+    .floating-bg {
+      top: -100vw;
+    }
+
+    .navbar {
+      justify-content: space-around;
+    }
+
+    /* Screen size of 750px */
+
+    @media (max-width: 750px) {
+      html {
+        font-size: 50%;
+      }
+
+      .floating-bg {
+        top: -90vw;
+      }
+
+      .section-1-heading {
+        top: 48vw;
+      }
+
+      .section-heading {
+        margin-bottom: 5rem;
+      }
+    }
+
+    /* Screen size of 550px */
+
+    @media (max-width: 550px) {
+      html {
+        font-size: 45%;
+      }
+
+      .floating-bg {
+        top: -70vw;
+      }
+
+      .section-1-heading {
+        top: 65vw;
+        width: 42rem;
+        font-size: 3.5rem;
+      }
+
+      .customer {
+        margin: 5rem 0;
+      }
+
+      .team-member {
+        margin: 5rem 0;
+      }
+
+      .section-4 {
+        height: auto;
+      }
+
+      .form-container {
+        background-color: transparent;
+        box-shadow: none;
+      }
+
+      .contact-form {
+        box-shadow: 1rem 1rem 2rem #aaa;
+      }
+      .contact-form:hover {
+        box-shadow: 2rem 2rem 3rem #aaa;
+      }
     }
   }
 }
